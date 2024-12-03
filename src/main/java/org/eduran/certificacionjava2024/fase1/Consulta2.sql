@@ -16,3 +16,5 @@ GROUP BY nom_cur,
          nom_asi,
          nom_doc,
          ape_doc
+
+select * from alumnos;
