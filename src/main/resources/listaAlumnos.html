@@ -1,0 +1,20 @@
+<div class="card p-4 mt-4"  th:fragment="lista">
+    <table class="table table-hover table-striped">
+
+        <thead>
+        <tr>
+            <th scope="col">rut</th>
+            <th scope="col">Nombre</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="alumno : ${alumnos}">
+            <th th:text="${alumno.runAlu}"></th>
+            <td th:text="${alumno.nomAlu}"></td>
+
+            <td><a  th:text="Eliminar" th:href="@{/eliminarAlumno/} + ${alumno.runAlu}"></a></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
